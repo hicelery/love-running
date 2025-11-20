@@ -1,4 +1,11 @@
 /* styles.css */
+/* wildcard to override browser defaults margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*header*/
 header {
     background-color: antiquewhite;
