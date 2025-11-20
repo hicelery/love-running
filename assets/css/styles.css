@@ -1,0 +1,12 @@
+/* styles.css */
+/*header*/
+header {
+    background-color: antiquewhite;
+}
+/*body and main content*/
+main {
+    background-color: rgb(76, 194, 194);
+}
+footer {
+    background-color: rgb(155, 14, 92);
+}
