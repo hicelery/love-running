@@ -6,14 +6,26 @@
     box-sizing: border-box;
 }
 
+/*General styles for body*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project styles*/
+    color: #3a3a3a;
+}
+
 /*header*/
 header {
     background-color: antiquewhite;
 }
-/*body and main content*/
+/* main content*/
 main {
     background-color: rgb(76, 194, 194);
+    /*ensure main takes up all available space push footer down*/
+    flex: 1 0 auto;
 }
+
 footer {
     background-color: rgb(155, 14, 92);
 }
