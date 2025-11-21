@@ -156,8 +156,19 @@ main {
     margin-top: 47px;
 }
 
-footer {
-    background-color: rgb(155, 14, 92);
+/* footer */
+#social-networks {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    color: #3a3a3a;
+    font-size: 1.6rem;
+    padding: 5%;
 }
 
 /* media queries for responsive styles */
