@@ -112,7 +112,7 @@ h1 {
 }
 
 #menu {
-    list-style: none;
+    list-style-type: none;
     font-size: 110%;
     letter-spacing: 4px;
 }
@@ -162,10 +162,6 @@ footer {
 
 /* media queries for responsive styles */
 @media screen and (min-width: 768px) {
-    .nav-toggle-label {
-        display: none;
-    }
-
     nav {
         position: relative;
         box-shadow: none;
@@ -180,5 +176,25 @@ footer {
 
     #menu > li {
         padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 2.8rem;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /*push main content down to accommodate larger header*/
+    main {
+        margin-top: 79px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
