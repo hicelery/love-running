@@ -159,3 +159,26 @@ main {
 footer {
     background-color: rgb(155, 14, 92);
 }
+
+/* media queries for responsive styles */
+@media screen and (min-width: 768px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        box-shadow: none;
+        display: block !important;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+}
