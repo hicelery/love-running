@@ -95,6 +95,10 @@ h3 {
     color: #252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /*header*/
 header {
     background-color: #ffffff;
@@ -236,6 +240,50 @@ main {
     padding: 5%;
 }
 
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    /*make text readable against background image*/
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fafafa;
+    padding: 15px;
+    text-align: center;
+    /*stops divs wrapping on screens less than 400px
+    Div will expand to fill row*/
+    flex-basis: 200px;
+    flex-grow: 1;
+    /*add border between divs*/
+    border: 2px solid #fafafa;
+}
+
+#times h3 {
+    /*make headings stand out against dark background*/
+    color: #fafafa;
+}
+
+/*Gallery page*/
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+/* media queries for landscapre phones and up */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* media queries for tablet */
 @media screen and (min-width: 768px) {
     nav {
@@ -289,11 +337,19 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+    /*gallery page*/
+    #photos {
+        column-count: 3;
+    }
 }
 /* media queries for larger tablets and small desktops */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    #photos {
+        column-count: 4;
     }
 }
 
